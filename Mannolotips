@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Instagram, Youtube, Send } from "lucide-react";
+import { Send } from "lucide-react";
 
 export default function MannoloTips() {
   return (
@@ -20,16 +20,24 @@ export default function MannoloTips() {
         <Card className="bg-zinc-900 border-zinc-800 rounded-2xl shadow-xl">
           <CardContent className="p-4">
             <h2 className="text-xl font-semibold mb-2">📊 Resultados</h2>
-            <p className="text-sm text-zinc-300">Espaço reservado para provas sociais e prints dos resultados dos palpites. Atualize com seus melhores greens!</p>
+            <p className="text-sm text-zinc-300">
+              Espaço reservado para provas sociais e prints dos resultados dos palpites. Atualize com seus melhores greens!
+            </p>
           </CardContent>
         </Card>
 
         <Card className="bg-zinc-900 border-zinc-800 rounded-2xl shadow-xl">
           <CardContent className="p-4">
             <h2 className="text-xl font-semibold mb-2">🎥 Vídeo de Apresentação</h2>
-            <p className="text-sm text-zinc-300">Este espaço é para um vídeo explicando como funciona a mannolotips e por que vale a pena seguir. Assim que tiver o vídeo, adicione o link aqui.</p>
+            {/* Placeholder para vídeo */}
+            <div className="w-full h-48 bg-zinc-700 flex items-center justify-center rounded-lg">
+              <span className="text-zinc-300 italic">Vídeo em breve</span>
+            </div>
           </CardContent>
+        </Card>
+      </section>
 
+      <footer className="text-sm text-zinc-500 mt-auto pt-10">
         © {new Date().getFullYear()} mannolotips — Todos os direitos reservados
       </footer>
     </main>
