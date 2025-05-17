@@ -1,0 +1,37 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Instagram, Youtube, Send } from "lucide-react";
+
+export default function MannoloTips() {
+  return (
+    <main className="min-h-screen bg-black text-white p-6 flex flex-col items-center">
+      <h1 className="text-4xl font-bold text-green-400 mb-4">mannolotips</h1>
+      <p className="text-center max-w-xl text-lg mb-6">
+        Palpites diários em futebol com alta taxa de acerto. Entre grátis no nosso grupo e acompanhe os greens!
+      </p>
+
+      <Button className="bg-green-500 hover:bg-green-600 text-white text-lg px-6 py-3 mb-8" asChild>
+        <a href="https://t.me/mannolotips" target="_blank" rel="noopener noreferrer">
+          Entrar no grupo gratuito <Send className="ml-2 w-5 h-5" />
+        </a>
+      </Button>
+
+      <section className="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+        <Card className="bg-zinc-900 border-zinc-800 rounded-2xl shadow-xl">
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">📊 Resultados</h2>
+            <p className="text-sm text-zinc-300">Espaço reservado para provas sociais e prints dos resultados dos palpites. Atualize com seus melhores greens!</p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-zinc-900 border-zinc-800 rounded-2xl shadow-xl">
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">🎥 Vídeo de Apresentação</h2>
+            <p className="text-sm text-zinc-300">Este espaço é para um vídeo explicando como funciona a mannolotips e por que vale a pena seguir. Assim que tiver o vídeo, adicione o link aqui.</p>
+          </CardContent>
+
+        © {new Date().getFullYear()} mannolotips — Todos os direitos reservados
+      </footer>
+    </main>
+  );
+}
